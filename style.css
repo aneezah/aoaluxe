@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+/* FRONT PAGE BEGININNING */
+header{
+    display: flex;
+    justify-content: start;
+    margin-right: 40px;
+}
+header h1{
+    margin-left: 30px;
+}
+header ul{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 230px;
+}
+header ul li{
+    margin-left: 50px;
+    margin-top: 1px;
+    list-style: none;
+    font-size: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+#brand{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+.showcase{
+    background: url("/images/IMG_3450.JPG")no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 91vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* animation: change 10s ease-in-out; */
+}
+.img_content{
+    margin-top: 200px;
+}
+.img_content h2,
+#img_a a{
+    margin-left: 10px;
+    color: white;
+    /* animation: slideBottom 3s ease forwards; */
+}
+#img_a a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: black;  
+    width: 130px;
+    padding: 10px;
+}
+#img_a a:hover{
+    background-color: gray;
+}
+.offcanvas{
+    width: 300px;
+}
+.navbar ul{
+    margin-top: 30px;
+}
+.nav-item{
+    margin-left: 30px;
+}
+.h{
+    width: 280px;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    /* margin-right: 20px; */
+}
+.apart{
+    margin-top: 100px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.slider-wrapper{
+    position: relative;
+}
+.image-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+} 
+.image-list::-webkit-scrollbar{
+    display: none;
+}
+.image-item{
+    width: 275px;
+    height: 350px;
+    object-fit: cover;
+}
+#prev-slide,
+#next-slide{
+    position: absolute;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 150px;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    border-radius: 30px;
+}
+#prev-slide{
+    left: -14px;
+}
+#next-slide{
+    right: 0px;
+}
+#prev-slide:hover,
+#next-slide:hover{
+  background-color: white;
+}
+#about{
+    text-align: center;
+}
+#about a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#about a h5{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+#about a h6{
+    line-height: 30px;
+}
+#view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#view a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+}
+#view a:hover{
+    background-color: gray;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    height: 200px;
+    /* width: 600px; */
+}
+.aside h3{
+    margin-top: 40px;
+}
+.aside p{
+    text-align: center;
+    margin-left: 10px;
+}
+.line{
+    width: 580px;
+    border-bottom: 2px solid white;
+    color: white;
+
+}
+.aside input{
+    width: 200px;
+    border: none;
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+#join{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 150px;
+}
+.list{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.list a{
+   color: black;
+   display: flex;
+   text-decoration: none;
+}
+/* FRONT PAGE ENDS */
+
+
+/* SECTION BEGINNING */
+.ontop{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ontop a{
+    text-decoration: none;
+    color: black;
+}
+.section-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+.item{
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+}
+/* SECTION ENDS */
+
+
+/* CONTENT ITEM STARTS */
+.contentHeader{
+    margin-top: 30px;
+}
+.contentHeader a{
+    text-decoration: none;
+    color: black;
+    margin-right: 0px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.img{
+    width: 274px;
+    height: 350px;
+    /* mix-blend-mode: ; */
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.content h5 {
+    margin-top: 30px;
+    text-align: start;
+}
+#btn{
+    width: 50px;
+    height: 40px;
+}
+.quantity{
+    display: flex;
+    margin-top: 30px;
+}
+#label{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    
+}
+#buttonDecr,
+#labelCount{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#add,
+#buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#add a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+}
+#buy a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+}
+#add a:hover,
+#buy a:hover{
+    background-color: wheat;
+}
+/* CONTENT ITEM ENDS */
+.WS{
+    color: green;
+    font-size: 20px;
+}
+.IG{
+    color: red;
+    font-size: 20px;
+}
+.TT{
+    color: black;
+    font-size: 20px;
+}
+
+
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes change{
+    10%{
+        background-image: url("/images/IMG_3450.JPG");
+    }
+    40%{
+        background-image: url("/images/IMG_3452.JPG");
+    }
+    70%{
+        background-image: url("/images/IMG_3451.JPG");
+    }
+}
+
+
+ @media screen and (max-width:400px){
+    header{
+        display: none;
+    }
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item{
+        width: 140px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .list{
+        height: 500px;
+    }
+}
+@media  (min-width:401px) and (max-width:500px){
+    header{
+        display: none;
+    }
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item{
+        width: 177px;
+        height: 220px;
+        object-fit: cover;
+    }
+    .list{
+        height: 500px;
+    }
+}
+@media  (min-width:501px) and (max-width:600px){
+    header{
+        display: none;
+    }
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item{
+        width: 220px;
+        height: 240px;
+        object-fit: cover;
+    }
+    .list{
+        height: 400px;
+    }
+}
+@media  (min-width:601px) and (max-width:750px){
+    header{
+        display: none;
+    }
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item{
+        width: 180px;
+        height: 270px;
+        object-fit: cover;
+    }
+    .list{
+        height: 400px;
+    }
+}
+@media (min-width:751px) and (max-width:850px){
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 18px; */
+    }
+    .item{
+        width: 220px;
+        height: 290px;
+        object-fit: cover;
+    }
+    .navbar{
+        display: none;
+    }
+    header ul{
+        margin-left: 120px;
+    }
+    .list{
+        height: 600px;
+    }
+   
+}
+@media (min-width:851px) and (max-width:950px){
+    .navbar{
+        display: none;
+    }
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+    }
+    .item{
+        width: 180px;
+        height: 300px;
+        object-fit: cover;
+    }  
+    .list{
+        height: 950px;
+    }
+} 
+@media (min-width:951px) and (max-width:1200px){
+    .navbar{
+        display: none;
+    }
+    .section-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+    }
+    .item{
+        width: 240px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .list{
+        height: 300px;
+    }
+    
+} 
+@media (min-width:1201px) and (max-width:1500px){
+    .navbar{
+        display: none;
+    }
+    .list{
+        height: 400px;
+    }
+    
+} 
+
+
+
+
+
+
+
+
+
