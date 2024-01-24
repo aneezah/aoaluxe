@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: start;
     margin-right: 40px;
+    position: sticky;
 }
 header h1{
     margin-left: 30px;
@@ -39,16 +40,16 @@ header ul li a{
     font-family:'Times New Roman', Times, serif;
 }
 .showcase{
-    background: url("/images/IMG_3450.JPG")no-repeat;
+    background: url("images/IMG_3450.JPG")no-repeat;
     background-size: cover;
     width: 100%;
-    height: 91vh;
+    height: 95vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    /* animation: change 10s ease-in-out; */
+    animation: change 10s ease-in-out;
 }
 .img_content{
     margin-top: 200px;
@@ -57,7 +58,7 @@ header ul li a{
 #img_a a{
     margin-left: 10px;
     color: white;
-    /* animation: slideBottom 3s ease forwards; */
+    animation: slideBottom 3s ease forwards;
 }
 #img_a a{
     text-decoration: none;
@@ -102,6 +103,9 @@ header ul li a{
     overflow-x: auto;
     scrollbar-width: none;
     grid-template-columns: repeat(10, 1fr);
+    animation: slideBottom 5s ease forwards;
+
+    
 } 
 .image-list::-webkit-scrollbar{
     display: none;
@@ -176,6 +180,10 @@ header ul li a{
     color: white;
     margin-top: 50px;
     height: 200px;
+    opacity: 0;
+    animation: slideRight 3s ease forwards;
+    animation-delay: 1s;
+
     /* width: 600px; */
 }
 .aside h3{
@@ -207,6 +215,7 @@ header ul li a{
 .list{
     margin-top: 30px;
     margin-left: 30px;
+    animation: slideLeft 3s ease-in-out forwards ;
 }
 .list a{
    color: black;
@@ -237,7 +246,7 @@ header ul li a{
     grid-template-columns: repeat(4, 1fr);
 }
 .item{
-    width: 260px;
+    width: 250px;
     height: 320px;
     object-fit: cover;
 }
@@ -318,6 +327,11 @@ header ul li a{
     background-color: wheat;
 }
 /* CONTENT ITEM ENDS */
+.home{
+    animation: zoomIn 2s ease forwards;
+    text-align: left;
+    
+}
 .WS{
     color: green;
     font-size: 20px;
@@ -345,16 +359,48 @@ header ul li a{
 }
 @keyframes change{
     10%{
-        background-image: url("/images/IMG_3450.JPG");
+        background-image: url("images/IMG_3450.JPG");
     }
     40%{
-        background-image: url("/images/IMG_3452.JPG");
+        background-image: url("images/IMG_3452.JPG");
     }
     70%{
-        background-image: url("/images/IMG_3451.JPG");
+        background-image: url("images/IMG_3451.JPG");
     }
 }
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
 
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+
+    }
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
 
  @media screen and (max-width:400px){
     header{
@@ -365,7 +411,7 @@ header ul li a{
         grid-template-columns: repeat(2, 1fr);
     }
     .item{
-        width: 140px;
+        width: 150px;
         height: 200px;
         object-fit: cover;
     }
@@ -392,6 +438,9 @@ header ul li a{
 }
 @media  (min-width:501px) and (max-width:600px){
     header{
+        display: none;
+    }
+    navbar{
         display: none;
     }
     .section-list{
@@ -439,7 +488,7 @@ header ul li a{
         display: none;
     }
     header ul{
-        margin-left: 120px;
+        margin-left: 100px;
     }
     .list{
         height: 600px;
@@ -460,6 +509,10 @@ header ul li a{
         height: 300px;
         object-fit: cover;
     }  
+    header ul{
+        margin-left: 100px;
+
+    }
     .list{
         height: 950px;
     }
@@ -474,7 +527,7 @@ header ul li a{
         gap: 18px;
     }
     .item{
-        width: 240px;
+        width: 230px;
         height: 300px;
         object-fit: cover;
     }
@@ -483,7 +536,7 @@ header ul li a{
     }
     
 } 
-@media (min-width:1201px) and (max-width:1500px){
+@media (min-width:1201px) and (max-width:5500px){
     .navbar{
         display: none;
     }
