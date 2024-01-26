@@ -97,6 +97,7 @@ header ul li a{
 }
 .slider-wrapper{
     position: relative;
+     margin-left: 20px;
 }
 .image-list{
     display: grid;
@@ -154,6 +155,7 @@ header ul li a{
 }
 #about a h6{
     line-height: 30px;
+     font-size: 15px;
 }
 #view{
     display: flex;
@@ -221,7 +223,12 @@ header ul li a{
 .list a{
    color: black;
    display: flex;
+   margin-bottom: 5px;
+   font-size: 20px;
    text-decoration: none;
+}
+.list p{
+    font-size: 20px;
 }
 /* FRONT PAGE ENDS */
 
@@ -240,6 +247,7 @@ header ul li a{
 }
 .section-list{
     display: grid;
+     position: sticky;
     gap: 18px;
     font-size: 0;
     overflow-x: auto;
@@ -257,6 +265,10 @@ header ul li a{
 /* CONTENT ITEM STARTS */
 .content{
     margin-left: 20px
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: sticky;
 }
 .contentHeader{
     margin-top: 30px;
@@ -273,15 +285,13 @@ header ul li a{
     height: 350px;
     /* mix-blend-mode: ; */
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
 .content h5 {
     margin-top: 30px;
     text-align: start;
     font-size: 20px;
+}
+.content h6 {
+   font-size: 20px
 }
 #btn{
     width: 50px;
@@ -291,11 +301,13 @@ header ul li a{
     display: flex;
     margin-top: 30px;
 }
+.quantity h6{
+   font-size: 20px;
+}
 #label{
     width: 150px;
     height: 30px;
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
 #buttonDecr,
 #labelCount{
