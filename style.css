@@ -50,6 +50,7 @@ header ul li a{
     justify-content: center;
     overflow: hidden;
     animation: change 10s ease-in-out;
+    position: sticky;
 }
 .img_content{
     margin-top: 200px;
@@ -129,7 +130,7 @@ header ul li a{
     border-radius: 30px;
 }
 #prev-slide{
-    left: -14px;
+    left: -4px;
 }
 #next-slide{
     right: 0px;
@@ -144,7 +145,7 @@ header ul li a{
 #about a{
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 25px;
 }
 #about a h5{
     font-size: 15px;
