@@ -54,6 +54,9 @@ header ul li a{
 .img_content{
     margin-top: 200px;
 }
+.img_content h2{
+    margin-bottom: 20px;
+}
 .img_content h2,
 #img_a a{
     margin-left: 10px;
@@ -142,7 +145,7 @@ header ul li a{
 #about a{
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 }
 #about a h5{
     font-size: 15px;
