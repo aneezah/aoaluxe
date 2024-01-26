@@ -247,7 +247,7 @@ header ul li a{
 }
 .section-list{
     display: grid;
-     position: sticky;
+    position: sticky;
     gap: 18px;
     font-size: 0;
     overflow-x: auto;
@@ -264,7 +264,7 @@ header ul li a{
 
 /* CONTENT ITEM STARTS */
 .content{
-    margin-left: 20px
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
