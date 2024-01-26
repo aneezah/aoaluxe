@@ -255,6 +255,9 @@ header ul li a{
 
 
 /* CONTENT ITEM STARTS */
+.content{
+    margin-left: 20px
+}
 .contentHeader{
     margin-top: 30px;
 }
@@ -278,6 +281,7 @@ header ul li a{
 .content h5 {
     margin-top: 30px;
     text-align: start;
+    font-size: 20px;
 }
 #btn{
     width: 50px;
