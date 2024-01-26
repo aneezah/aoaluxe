@@ -104,7 +104,6 @@ header ul li a{
     overflow-x: auto;
     scrollbar-width: none;
     grid-template-columns: repeat(10, 1fr);
-    animation: slideBottom 5s ease forwards;
 
     
 } 
