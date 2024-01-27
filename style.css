@@ -347,6 +347,7 @@ header ul li a{
 .home{
     animation: zoomIn 2s ease forwards;
     text-align: left;
+    margin-left: 20px;
     
 }
 .WS{
