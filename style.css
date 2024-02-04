@@ -561,6 +561,15 @@ header ul li a{
     .list{
         height: 400px;
     }
+     .section-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+    }
+    .item{
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
     
 } 
 
