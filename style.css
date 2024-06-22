@@ -429,7 +429,7 @@ header ul li a{
         grid-template-columns: repeat(2, 1fr);
     }
     .item{
-        width: 150px;
+        width: 155px;
         height: 200px;
         object-fit: cover;
     }
@@ -446,7 +446,7 @@ header ul li a{
         grid-template-columns: repeat(2, 1fr);
     }
     .item{
-        width: 177px;
+        width: 180px;
         height: 220px;
         object-fit: cover;
     }
@@ -466,7 +466,7 @@ header ul li a{
         grid-template-columns: repeat(2, 1fr);
     }
     .item{
-        width: 220px;
+        width: 225px;
         height: 240px;
         object-fit: cover;
     }
@@ -483,7 +483,7 @@ header ul li a{
         grid-template-columns: repeat(3, 1fr);
     }
     .item{
-        width: 180px;
+        width: 185px;
         height: 270px;
         object-fit: cover;
     }
@@ -498,7 +498,7 @@ header ul li a{
         /* gap: 18px; */
     }
     .item{
-        width: 220px;
+        width: 230px;
         height: 290px;
         object-fit: cover;
     }
@@ -523,7 +523,7 @@ header ul li a{
         gap: 18px;
     }
     .item{
-        width: 180px;
+        width: 185px;
         height: 300px;
         object-fit: cover;
     }  
@@ -545,7 +545,7 @@ header ul li a{
         gap: 18px;
     }
     .item{
-        width: 230px;
+        width: 250px;
         height: 300px;
         object-fit: cover;
     }
@@ -567,7 +567,7 @@ header ul li a{
         gap: 18px;
     }
     .item{
-        width: 250px;
+        width: 260px;
         height: 320px;
         object-fit: cover;
     
